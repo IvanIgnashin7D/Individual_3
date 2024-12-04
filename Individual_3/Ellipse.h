@@ -15,12 +15,10 @@ public:
 	Ellipse() = default;
 	Ellipse(Point center, double rx, double ry);
 	Ellipse(const Ellipse& fig);
-	double getarea() override;
-	FrameRectangle getFrameRectangle() override;
-	void move(double x, double y) override;	
-	Shape* clone() override;
-	std::string getname() override;
-
-	Ellipse(const Point& center_, double ry_, double rx_) : center_(center_), ry_(ry_), rx_(rx_){}
+	double getarea();
+	FrameRectangle getFrameRectangle();
+	void move(double x, double y);	
+	Shape* clone();
+	std::string getname();
 };
 

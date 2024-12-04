@@ -1,4 +1,7 @@
 #pragma once
+#include "Point.h"
+#include "FrameRectangle.h"
+
 class FrameRectangle
 {
 private:

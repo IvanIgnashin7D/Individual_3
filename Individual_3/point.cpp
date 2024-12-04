@@ -1,6 +1,5 @@
 #include "Point.h"
 
-Point::Point() {};
 
 Point::Point(double posx, double posy) {
 	Point::x_ = posx;

@@ -1,8 +1,8 @@
 #pragma once
 #include "FrameRectangle.h"
 #include "Point.h"
-#include "Ellipse.h"
-#include "Regular.h"
+#include <string>
+
 class Shape
 {
 public:

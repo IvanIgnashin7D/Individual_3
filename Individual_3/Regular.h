@@ -1,5 +1,5 @@
 #pragma once
-#include "Point.h";
+#include "Point.h"
 #include "Shape.h"
 #include <string>
 class Regular : public Shape
@@ -22,4 +22,9 @@ public:
 	void move(double x, double y);
 	Shape* clone();
 	std::string getname();
+
+	Regular(const Point& center_, const Point& a_, const Point& b_, double height_)
+		: center_(center_), a_(a_), b_(b_), height_(height_)
+	{
+	}
 };
