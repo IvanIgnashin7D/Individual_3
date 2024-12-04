@@ -1,7 +1,8 @@
 #pragma once
-#include "point.h"
+#include "Point.h"
 #include "FrameRectangle.h"
 #include "Shape.h"
+#include <string>
 
 class Ellipse : public Shape
 {
@@ -16,8 +17,10 @@ public:
 	Ellipse(const Ellipse& fig);
 	double getarea() override;
 	FrameRectangle getFrameRectangle() override;
-	void move(Point p) override;	
+	void move(double x, double y) override;	
 	Shape* clone() override;
-	char* getname();
+	std::string getname() override;
+
+	Ellipse(const Point& center_, double ry_, double rx_) : center_(center_), ry_(ry_), rx_(rx_){}
 };
 

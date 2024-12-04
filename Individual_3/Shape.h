@@ -1,15 +1,16 @@
 #pragma once
 #include "FrameRectangle.h"
-#include "point.h"
+#include "Point.h"
 #include "Ellipse.h"
 #include "Regular.h"
 class Shape
 {
 public:
+	virtual ~Shape() = default;
 	virtual double getarea() = 0;
 	virtual FrameRectangle getFrameRectangle() = 0;
-	virtual void move(Point p) = 0;
+	virtual void move(double x, double y) = 0;
 	virtual Shape* clone() = 0;
-	virtual char* getname() = 0;
+	virtual std::string getname() = 0;
 };
 

@@ -1,8 +1,14 @@
 #include "Ellipse.h"
 #include "FrameRectangle.h"
+#include "Point.h"
 #define _USE_MATH_DEFINES
 #include <cmath>
 #include <iostream>
+#include <string>
+
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
 	
 
 Ellipse::Ellipse(Point center, double rx, double ry) {
@@ -29,17 +35,19 @@ FrameRectangle Ellipse::getFrameRectangle()
 	return FrameRectangle(2.0 * ry_, 2.0 * rx_, center_);
 }
 
-void Ellipse::move(Point p)
+void Ellipse::move(double x, double y)
 {
-	Ellipse::center_ = p;
+	Ellipse::center_.setx(Ellipse::center_.getx() + x);
+	Ellipse::center_.sety(Ellipse::center_.gety() + y);
 }
 
-
-char* Ellipse::getname()
+Shape* Ellipse::clone()
 {
-	return nullptr;
-}
-
-Shape* clone() {
 	return new Ellipse(*this);
+}
+
+
+std::string Ellipse::getname()
+{
+	return "ELLIPSE";
 }

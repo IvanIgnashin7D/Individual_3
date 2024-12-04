@@ -21,7 +21,7 @@
   <ItemGroup>
     <ClInclude Include="Ellipse.h" />
     <ClInclude Include="FrameRectangle.h" />
-    <ClInclude Include="point.h" />
+    <ClInclude Include="Point.h" />
     <ClInclude Include="Regular.h" />
     <ClInclude Include="Shape.h" />
   </ItemGroup>
@@ -31,7 +31,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="point.cpp" />
     <ClCompile Include="Regular.cpp" />
-    <ClCompile Include="Shape.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

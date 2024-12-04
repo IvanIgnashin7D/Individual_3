@@ -8,5 +8,8 @@ private:
 
 public:
 	FrameRectangle(double width, double height, Point pos);
+	double getw() const;
+	double geth() const;
+	Point getp() const;
 };
 
