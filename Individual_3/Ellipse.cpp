@@ -32,7 +32,7 @@ double Ellipse::getarea()
 
 FrameRectangle Ellipse::getFrameRectangle()
 {
-	return FrameRectangle(2.0 * ry_, 2.0 * rx_, center_);
+	return FrameRectangle(2.0 * rx_, 2.0 * ry_, center_);
 }
 
 void Ellipse::move(double x, double y)
