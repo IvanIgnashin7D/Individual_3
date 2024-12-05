@@ -4,9 +4,13 @@
 #include "Ellipse.h"
 #include "Regular.h"
 #include <iostream>
+#include <iomanip>
+
 
 
 	int main() {
+	std::cout << std::fixed << std::setprecision(2);
+
 	Ellipse* ellipse1 = new Ellipse(Point(10, 10), 6.0, 3.0);
 	std::cout << ellipse1->getname() << ' ';
 	std::cout << ellipse1->getarea() << ' ';
